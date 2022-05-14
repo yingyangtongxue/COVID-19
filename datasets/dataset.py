@@ -3,7 +3,7 @@ import os
 
 def split_states_and_country(filename, index):
     clean_folder = os.getcwd()
-    clean_folder += os.sep + "datasets"+ os.sep + "clean"
+    clean_folder +=  os.sep + "clean"
     
     clean_folder_states = clean_folder+os.sep+"states"
     clean_folder_brazil = clean_folder+os.sep+"brazil"
@@ -16,7 +16,7 @@ def split_states_and_country(filename, index):
 
 def clean_dataset_into_multiple_files():
     unclean_folder = os.getcwd()
-    unclean_folder += os.sep + "datasets"+ os.sep + "unclean"
+    unclean_folder += os.sep + "unclean"
     
     i=0
     for filename in os.listdir(unclean_folder):
@@ -38,7 +38,7 @@ def merge_files(file_folder,result_folder,result_filename):
 
 def clean_dataset_into_single_file():
     clean_folder = os.getcwd()
-    clean_folder += os.sep + "datasets"+ os.sep + "clean"
+    clean_folder += os.sep + "clean"
     
     clean_folder_states = clean_folder+os.sep+"states"
     clean_folder_brazil = clean_folder+os.sep+"brazil"
